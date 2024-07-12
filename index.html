@@ -1,15 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validação de Formularios</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Cadastre-se Hoje!</h1>
+      <!-- Formulario -->
+      <form id="form">
+        <!-- Nome Completo -->
+        <div class="form-group">
+          <label for="name">Nome Completo</label>
+          <input type="text" id="name" placeholder="Nome Completo" />
+        </div>
+        <!-- Telefone -->
+        <div class="form-group">
+          <label for="phone">Telefone</label>
+          <input type="tel" id="phone" placeholder="(55) 5555-5555" />
+        </div>
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" placeholder="exemplo@dominio.com" />
+        </div>
+        <!-- Website -->
+        <div class="form-group">
+          <label for="website">Website</label>
+          <input type="url" id="website" placeholder="http://www.dominio.com" />
+        </div>
+        <!-- Senha -->
+        <div class="form-group">
+          <label for="password1">Senha</label>
+          <input type="password" id="password1" placeholder="Criar Senha" />
+        </div>
+        <!-- Confirmar Senha -->
+        <div class="form-group">
+          <label for="password2">Confirmar Senha</label>
+          <input type="password" id="password2" placeholder="Confirmar Senha" />
+        </div>
+        <!-- Botão -->
+        <button type="submit">Cadastrar</button>
+      </form>
+
+      <!-- Mensagem de Sucesso/Erro -->
+      <div class="message-container">
+        <h3 id="message">Não Hesite!</h3>
+      </div>
+    </div>
     <!-- Script -->
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
