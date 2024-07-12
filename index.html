@@ -15,32 +15,75 @@
         <!-- Nome Completo -->
         <div class="form-group">
           <label for="name">Nome Completo</label>
-          <input type="text" id="name" placeholder="Nome Completo" />
+          <input
+            type="text"
+            id="name"
+            placeholder="Nome Completo"
+            name="name"
+            required
+            minlength="3"
+            maxlength="100"
+          />
         </div>
         <!-- Telefone -->
         <div class="form-group">
           <label for="phone">Telefone</label>
-          <input type="tel" id="phone" placeholder="(55) 5555-5555" />
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="5555-5555"
+            required
+            pattern="[0-9]{4,5}-[0-9]{4}"
+          />
         </div>
         <!-- Email -->
         <div class="form-group">
           <label for="email">E-mail</label>
-          <input type="email" id="email" placeholder="exemplo@dominio.com" />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="exemplo@dominio.com"
+            required
+          />
         </div>
         <!-- Website -->
         <div class="form-group">
           <label for="website">Website</label>
-          <input type="url" id="website" placeholder="http://www.dominio.com" />
+          <input
+            type="url"
+            id="website"
+            placeholder="http://www.dominio.com"
+            name="website"
+            required
+          />
         </div>
         <!-- Senha -->
         <div class="form-group">
           <label for="password1">Senha</label>
-          <input type="password" id="password1" placeholder="Criar Senha" />
+          <input
+            type="password"
+            id="password1"
+            placeholder="Criar Senha (Mínimo 8 caracteres)"
+            required
+            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+            maxlength="20"
+            title="A senha deve conter pelo menos 8 caracteres, incluindo letras maiúsculas, minúsculas e números"
+          />
         </div>
         <!-- Confirmar Senha -->
         <div class="form-group">
           <label for="password2">Confirmar Senha</label>
-          <input type="password" id="password2" placeholder="Confirmar Senha" />
+          <input
+            type="password"
+            id="password2"
+            placeholder="Confirmar Senha"
+            name="password"
+            required
+            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+            maxlength="20"
+          />
         </div>
         <!-- Botão -->
         <button type="submit">Cadastrar</button>
